@@ -39,9 +39,8 @@ section {
 }
 .header-container {
     display: flex;
-    padding-top: 24px;
+    padding: 0 15px 0 15px;
     gap: 332px;
-    padding-bottom: 24px;
     align-items: center;
     justify-content: space-between;
 }
@@ -55,10 +54,11 @@ section {
     flex-grow: 1;
 justify-content: space-between;
 align-items: center;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 .header-nav-list {
     display: flex;
-    padding: 24px 0;
     gap: 40px;
     }
 .header-link {
@@ -66,6 +66,7 @@ color: inherit;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
+padding: 24px 0;
 }
 .header-link:hover,
 .header-link:focus {
