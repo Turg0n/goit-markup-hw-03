@@ -3,12 +3,47 @@ body {
     color: #434455;
     background-color: #fff;
 }
+img {
+    display: block;
+    max-width: 100% ;
+    height: auto;
+}
+p, h1,h2,h3,h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.container {
+    max-width: 1158px;   
+    padding: 0 15px;   
+    margin: 0 auto; 
+}
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.header-container {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 332px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .link {
     text-decoration: none;
 }
 .header-nav {
+    display: flex;
+    gap: 76px;
     color: #2E2F42;
+    flex-grow: 1;
+justify-content: space-between;
 }
+.header-nav-list {
+    display: flex;
+    gap: 40px;
+    }
 .header-link {
 color: inherit;
 font-weight: 500;
@@ -35,11 +70,18 @@ text-decoration: none;
 }
 ul {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 .address {
     text-decoration: none;
     color: #434455;
     font-style: normal;
+}
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 .address-link {
     color: inherit;
@@ -56,8 +98,14 @@ ul {
     text-align: center;
     background-color: #2E2F42;
 }
-.title-head {
-    text-align: center;
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+.title-head { 
+    width: 496px;  
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -71,18 +119,36 @@ ul {
     letter-spacing: 0.04em;
     cursor: pointer;
     background-color: #4D5AE5;
+    border-radius: 4px;
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+gap: 10px;
+border: none;
 }
 .title-button:hover,
 .title-button:focus {
-    background-color: #404BBF;
+background-color: #404BBF;
 }
 
+.features-list {
+display: flex;
+gap: 24px;
+}
+.features-items {
+width: calc((100% - 3 * 24px ) / 4 );
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+}
 .features-title {
 color: #2E2F42;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+
 }
 .features-text {
     line-height: 1.5;
@@ -91,6 +157,7 @@ letter-spacing: 0.02em;
 .team {
     background-color: #F4F4FD;
 }
+
 .team-title {
 color: #2E2F42;
 text-align: center;
@@ -99,20 +166,36 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+padding-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 .team-list-item {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
+border-radius: 0px 0px 4px 4px;
 background-color: #FFF;
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-list-head {
+    text-align: center;
 color: #2E2F42;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+padding-bottom: 8px;
 }
 .team-list-text {
+text-align: center;
 line-height: 1.5;
 letter-spacing: 0.02em;
+padding-bottom: 32px;
 }
 .portfolio-title {
 color: #2E2F42;
@@ -121,6 +204,26 @@ font-size: 36px;
 font-weight: 700;
 line-height: 1.11; 
 letter-spacing: 0.02em;
+padding-top: 120px;
+padding-bottom: 72px;
+}
+.portfolio-list {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
+}
+.portfolio-list-item {
+    width: calc((100% - 2 * 24px) / 3);
+
+}
+.portfolio-card {
+padding-top: 32px;
+padding-bottom: 32px;
+    width: 100%;
+    border-left: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
 }
 .portfolio-list-head {
 color: #2E2F42;
@@ -132,14 +235,21 @@ letter-spacing: 0.02em;
 .portfolio-list-text {
 line-height: 1.5; 
 letter-spacing: 0.02em;
+padding-top: 8px;
 }
 .footer {
 background-color: #2E2F42;
+}
+.footer-container {
+    padding-top: 101.5px;
+    padding-bottom: 100px;
 }
 .logo-fstud {
     color: #f4f4fd;
 }
 .footer-text {
+    width: 264px;
+    padding-top: 16px;
     color: #F4F4FD;
     line-height: 1.5; 
     letter-spacing: 0.02em;
