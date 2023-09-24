@@ -54,8 +54,7 @@ section {
     flex-grow: 1;
 justify-content: space-between;
 align-items: center;
-padding-top: 24px;
-padding-bottom: 24px;
+
 }
 .header-nav-list {
     display: flex;
@@ -67,11 +66,11 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
 padding: 24px 0;
+display: block;
 }
 .header-link:hover,
 .header-link:focus {
     color: #404BBF;
-    text-decoration: underline;
 }
 .logo {
 font-family: 'Raleway', sans-serif;
@@ -103,16 +102,18 @@ ul {
 .address-list {
 display: flex;
 gap: 40px;
+
 }
 .address-link {
     color: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+padding-bottom: 24px;
 }
 .address-link:hover,
 .address-link:focus {
     color: #404BBF;
-    text-decoration: underline;
 }
 .title {
     padding: 188px 0;
@@ -120,19 +121,16 @@ gap: 40px;
     text-align: center;
     background-color: #2E2F42;
 }
-.title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-}
+
 .title-head { 
     max-width: 496px;  
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    }
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
 .title-button {
     color: #FFF;
     text-align: center;
@@ -145,8 +143,7 @@ gap: 40px;
     display: block;
     min-width: 169px;
     padding: 16px 32px;
-    align-items: flex-start;
-gap: 10px;
+margin: 0 auto;
 border: none;
 }
 .title-button:hover,
@@ -265,7 +262,6 @@ background-color: #2E2F42;
 }
 .footer-text {
     width: 264px;
-    padding-top: 16px;
     color: #F4F4FD;
     line-height: 1.5; 
     letter-spacing: 0.02em;
